@@ -1,0 +1,29 @@
+<html>
+
+<script>
+var obj = {"a": 1, "b": 2, "c": 2},     
+keys = Object.keys(obj),    
+ largest = Math.max.apply(null, keys.map(x => obj[x]))    
+  result = keys.reduce((result, key) => 
+  { if (obj[key] === largest){ result.push(key); } return result; }, [])
+
+
+  var a = "a";
+  var b = "b";
+  var c = "c";
+
+
+  for(i=0;i< result.length;i++){
+    
+
+    console.log( result[i] + " "+ obj[result[i]])
+
+    
+  }
+
+
+
+
+</script>
+
+</html>
